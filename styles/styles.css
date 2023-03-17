@@ -20,6 +20,10 @@ header{
     align-items: center;
     background-color: #212121;
     min-height: 80px;
+    z-index: 5;
+    width: 100%;
+    top: 0;
+    position: fixed;
 }
 
 header > nav{
@@ -102,4 +106,60 @@ header > nav > ul > li > a:hover{
 
     height: 100vh;
     background-color: #fff;
+}
+
+
+/*Mobile menu drop*/
+.drop{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .drop{
+        display: block;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    header{
+        padding: 5px 12px;
+    }
+
+    header > nav{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        top: 80px;
+        right: 0;
+        background-color: var(--pretoconst);
+        align-items: flex-start;
+        flex-wrap: wrap;
+        display: none;
+    }
+    .menu-ativo{
+        display: flex;
+    }
+    
+    header >nav >ul{
+       flex-direction: column;
+       gap: 04px;;
+       width: 100%;
+    }
+    
+   
+  
+    
+    
+    .menu-social{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+   
+
+
+
 }
