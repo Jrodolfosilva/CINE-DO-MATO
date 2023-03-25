@@ -143,8 +143,18 @@ header > nav > ul > li > a:hover{
 
 
 
+.containerParceiro{
+    height: 100vh;
+    padding: 60px 120px;
+    
+}
 
 
+.containerParceiro > h2{
+    font-size: 30px;
+    color: var(--branco);
+    font-weight: 400;
+}
 
 
 
