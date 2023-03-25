@@ -12,6 +12,9 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
+body{
+    background-color: var(--pretoconst);
+}
 
 header{
     display: flex;
@@ -54,14 +57,15 @@ header > nav > ul > li > a:hover{
     cursor: pointer;
 }
 
+
 .containerMain{
     height: 100vh;
-    background-color: var(--preto);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
+    background-color: black;
 }
 
 .containerMain > h1{
@@ -105,8 +109,106 @@ header > nav > ul > li > a:hover{
 .containerPortifolio{
 
     height: 100vh;
-    background-color: #fff;
+    padding: 60px 120px;
 }
+.containerPortifolio >h2{
+    font-size: 30px;
+    color: var(--branco);
+}
+.containerDestaque{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.destaques{
+    border: 1px solid var(--branco);
+    border-radius: 8px;
+    height: 364px !important;
+    width: 260px !important;
+    padding: 25px;
+    background-color: var(--preto);
+    position: relative;
+
+}
+.destaques>div{
+    margin-top: 130%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Mobile menu drop*/
